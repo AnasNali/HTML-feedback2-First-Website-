@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reserva</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css"
+</head>
+
+<body>
+	<a name="reserva"></a>
+
+<h1 align="center">Restaurante Nali's</h1>
+
+<center>
+	<h3>
+	<a href="index.html">Inicio</a>
+	<a href="menus.html">Menús</a>
+	<a href="reserva.html">Reserva</a>
+	<a href="instalaciones.html">Instalaciones</a>
+	</h3>
+</center>
+
+<hr class="new1">
+
+<center>
+<h4>
+<form name="Reserva" action="mailto:anas_nali@hotmail.com" method="post" enctype="text/plain">
+	<label for="nombre_reserva"><b>Nombre completo:</b></label>
+	<input type="text" name="nombre_reserva" required>
+
+<p>
+Fechas disponibles:
+<input type="date" id="start" name="fecha-reserva"
+       value="2020-11-06"
+       min="2020-11-07" max="2020-11-19">
+
+<select name="hora">
+	<option>19</option>
+	<option>20</option>
+	<option>21</option>
+	<option>22</option>
+	<option>23</option>
+	<option>00</option>
+</select>
+<select name="minutos">
+	<option>00</option>
+	<option>15</option>
+	<option>30</option>
+	<option>45</option>
+</select>
+</p>
+
+Numero de telefono:
+<input type="tel" id="phone" name="phone" placeholder="612345678" pattern="[0-9]{9}" required>
+
+<p>
+Numero de comensales:
+<input type="number" name="comensales" min="1" required>
+</p>
+
+<p>
+¿Donde le gustría que se le ubique?
+<input type="radio" id="interior" name="mesa" value="Mesa en el interior">
+<label for="interior"><a href="instalaciones.html #restaurante_interior" target="_blank">Mesa en el interior</a></label>
+<input type="radio" id="terrraza" name="mesa" value="Mesa en la terraza">
+<label for="terraza"><a href="instalaciones.html #restaurante_patio" target="_blank">Mesa en el patio</a></label>
+</p>
+
+<p>
+<b>Parking:</b><input type="checkbox" name="parking">
+</p>
+
+Peticiones especiales:
+<textarea id="peticiones" rows="3" name="peticiones" placeholder="Escriba aquí..."></textarea>
+
+<p>
+<input type="submit" name="Reservar">
+</p>
+</form>
+</center>
+</h4>
+</body>
+</html>
